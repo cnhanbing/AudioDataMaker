@@ -9,3 +9,5 @@ main copy.py
 scripts/01-Pick_url.py
 cut_audio.py
 test.py
+conf/config.yaml
+results/
