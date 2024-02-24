@@ -1,0 +1,11 @@
+main copy.py
+*.pth
+*.pyc
+*.pt
+*.mp3
+*.wav
+分类.py
+*.log
+scripts/01-Pick_url.py
+cut_audio.py
+test.py
