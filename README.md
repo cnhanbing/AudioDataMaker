@@ -17,24 +17,26 @@
 
 #### 安装依赖
 
-首先，确保已经安装了以下依赖：
-
-- Python 3.11
-- torchaudio
-- hydra-core
-- ffmpeg
-- espeak
-
-你可以使用以下命令安装所需的Python库：
-
-```bash
-pip install -r requirements.txt
-```
-同时，你需要安装额外的系统依赖，如 ffmpeg 和 espeak。在 Ubuntu 系统上，可以使用以下命令安装：
+- 安装必要的系统依赖，如 ffmpeg 和 espeak。在 Ubuntu 系统上，可以使用以下命令安装：
 ```bash
 sudo apt install ffmpe
 sudo apt-get install espeak 
 ```
+
+- 然后你需要将代码克隆到本地
+```bash
+git clone https://github.com/cnhanbing/AudioDataMaker.git
+```
+
+- 最后安装虚拟环境及依赖项：
+
+- Python 3.11
+
+```bash
+conda create -n AudioDataMaker python=3.11
+pip install -r requirements.txt
+```
+同时，
 #### 运行项目
 运行项目需要使用以下命令：
 ```bash
@@ -52,12 +54,8 @@ python main.py
 #### 配置文件说明
 
 在conf/config.yaml文件中，你可以配置以下参数：
+![](conf/config.png)
 
-- dir: 包含临时文件夹、YouTube音频保存目录、切片音频保存目录等路径设置。
-- base: 包含视频URL等基础参数设置。
-- slicer: 包含裁切音频的阈值、最小长度等参数设置。
-- single_speaker: 包含单人说话判断模型名称、HF Access Tokens等参数设置。
-- sperker_info: 包含说话者信息ID和索引等参数设置。
 
 #### 依赖说明：
 
